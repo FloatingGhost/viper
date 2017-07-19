@@ -1,1 +1,2 @@
-python viper-web.py
+#!/bin/bash
+python3 viper-web.py
