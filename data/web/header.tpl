@@ -50,8 +50,8 @@ end
                     % end
                 </ul>
                 </li>
-                <li ><a href="yara?action=list">Yara Rules</a></li>
-                <li ><a href="cli">CLI</a></li>
+                <li ><a href="/viper/yara?action=list">Yara Rules</a></li>
+                <li ><a href="/viper/cli">CLI</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

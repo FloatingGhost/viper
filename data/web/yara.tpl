@@ -6,7 +6,7 @@
     <div class="col-md-6">
         <div class="list-group">
             % for rule in rule_list:
-                <a href="yara?action=display&amp;rule={{rule}}" class="list-group-item">{{rule}}</a>
+                <a href="/viper/yara?action=display&amp;rule={{rule}}" class="list-group-item">{{rule}}</a>
             % end
         </div>
     </div>    
@@ -14,7 +14,7 @@
         % if rule_text:
             <pre>{{rule_text}}</pre>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editRule">Edit</button>
-            <a class="btn btn-primary" href="yara?action=delete&amp;rulename={{rule_name}}">Delete</a>
+            <a class="btn btn-primary" href="/viper/yara?action=delete&amp;rulename={{rule_name}}">Delete</a>
         % end
     </div>
 </div>

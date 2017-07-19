@@ -42,7 +42,7 @@
         </tr>
         <tr>
             <th></th>
-            <td><a class="btn btn-primary btn-small" href="get/{{project}}/{{file_info[8]}}">Download</a> <a class="btn btn-primary btn-small" onClick="$('#cuckoo').load('cuckoo/submit?hash={{file_info[8]}}&amp;project={{project}}');">Cuckoo</a> <span id="cuckoo"></span></td>
+            <td><a class="btn btn-primary btn-small" href="/viper/get/{{project}}/{{file_info[8]}}">Download</a> <a class="btn btn-primary btn-small" onClick="$('#cuckoo').load('/viper/cuckoo/submit?hash={{file_info[8]}}&amp;project={{project}}');">Cuckoo</a> <span id="cuckoo"></span></td>
         </tr>          
     </table>
 
@@ -51,7 +51,7 @@
         % for tag in file_info[1].split(','):
             % if len(tag) > 0:
                 % tag = tag.strip()
-                <span><a href="tags?action=search&amp;value={{tag}}" class="alert-link">{{tag}}</a> <a onclick="delTag('{{tag}}')" href="#" class="alert-link" ><span class="glyphicon glyphicon-remove"></span></a></span>
+                <span><a href="/viper/tags?action=search&amp;value={{tag}}" class="alert-link">{{tag}}</a> <a onclick="delTag('{{tag}}')" href="#" class="alert-link" ><span class="glyphicon glyphicon-remove"></span></a></span>
             % end
         % end
         <a href="#newTag"><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#newTag"></span></a>
