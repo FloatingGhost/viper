@@ -42,7 +42,7 @@
         </tr>
         <tr>
             <th></th>
-            <td><a class="btn btn-primary btn-small" href="/get/{{project}}/{{file_info[8]}}">Download</a> <a class="btn btn-primary btn-small" onClick="$('#cuckoo').load('/cuckoo/submit?hash={{file_info[8]}}&amp;project={{project}}');">Cuckoo</a> <span id="cuckoo"></span></td>
+            <td><a class="btn btn-primary btn-small" href="get/{{project}}/{{file_info[8]}}">Download</a> <a class="btn btn-primary btn-small" onClick="$('#cuckoo').load('cuckoo/submit?hash={{file_info[8]}}&amp;project={{project}}');">Cuckoo</a> <span id="cuckoo"></span></td>
         </tr>          
     </table>
 
@@ -51,7 +51,7 @@
         % for tag in file_info[1].split(','):
             % if len(tag) > 0:
                 % tag = tag.strip()
-                <span><a href="/tags?action=search&amp;value={{tag}}" class="alert-link">{{tag}}</a> <a onclick="delTag('{{tag}}')" href="#" class="alert-link" ><span class="glyphicon glyphicon-remove"></span></a></span>
+                <span><a href="tags?action=search&amp;value={{tag}}" class="alert-link">{{tag}}</a> <a onclick="delTag('{{tag}}')" href="#" class="alert-link" ><span class="glyphicon glyphicon-remove"></span></a></span>
             % end
         % end
         <a href="#newTag"><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#newTag"></span></a>
@@ -64,7 +64,7 @@
                     <h4 class="modal-title" id="newNoteLabel">Add New Tag</h4>
                 </div>
                 <div class="modal-body">
-                    <form role="form" action="/tags/add" enctype="multipart/form-data" method="post">
+                    <form role="form" action="tags/add" enctype="multipart/form-data" method="post">
                         <input type="text" class="form-control" name="tags" id="tag" placeholder="Tags">
                         <button type="submit" class="btn btn-default" name="new" value="New">Save</button>
                         <input type="hidden" name="sha256" value="{{file_info[8]}}" />
@@ -81,7 +81,7 @@
     
     <script>
     function delTag(tagName) {
-    path = "/tags/del";
+    path = "tags/del";
     
     var form = document.createElement("form");
     form.setAttribute("method", "post");

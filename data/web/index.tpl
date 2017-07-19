@@ -142,7 +142,7 @@
             % for row in latest:
             <tr>
                 <td>{{row.id}}</td>
-                <td><a href="/file/{{p}}/{{row.sha256}}">{{row.name}}</a></td>
+                <td><a href="file/{{p}}/{{row.sha256}}">{{row.name}}</a></td>
                 <td><span class="mono">{{row.sha256}}</span></td>
                 <td>
                 % for tags in row.tag:
@@ -169,7 +169,7 @@ cur_page = int(act_page)
     <div class="text-center">
         <ul class="pagination">
             
-          <li><a href="/project/{{p}}?page={{cur_page-1}}">&laquo;</a></li>
+          <li><a href="project/{{p}}?page={{cur_page-1}}">&laquo;</a></li>
           % for i in range(num_pages):
           <li
           % if act_page: 
@@ -179,9 +179,9 @@ cur_page = int(act_page)
           % end
           >
           
-          <a href="/project/{{p}}?page={{i}}">{{i}}</a></li>
+          <a href="project/{{p}}?page={{i}}">{{i}}</a></li>
           % end
-          <li><a href="/project/{{p}}?page={{cur_page+1}}">&raquo;</a></li>
+          <li><a href="project/{{p}}?page={{cur_page+1}}">&raquo;</a></li>
         </ul>
     </div>
 

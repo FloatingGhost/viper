@@ -2,8 +2,8 @@
 
 <ol class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li><a href="/project/{{project}}">{{project}}</a></li>
-    <li><a href="/file/{{project}}/{{file_info[8]}}">{{file_info[8]}}</a></li>
+    <li><a href="project/{{project}}">{{project}}</a></li>
+    <li><a href="file/{{project}}/{{file_info[8]}}">{{file_info[8]}}</a></li>
 </ol>
 
 <ul id="navTabs" class="nav nav-tabs">

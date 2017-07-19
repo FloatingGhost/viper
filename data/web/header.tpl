@@ -21,8 +21,8 @@ end
     <meta charset="UTF-8">
     <meta name="description" content="Viper Web Interface">
     <meta name="keywords" content="viper,malware,analysis">
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -46,12 +46,12 @@ end
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     % for project in projects:
-                        <li><a href="/project/{{project}}">{{project}}</a></li>
+                        <li><a href="project/{{project}}">{{project}}</a></li>
                     % end
                 </ul>
                 </li>
-                <li ><a href="/yara?action=list">Yara Rules</a></li>
-                <li ><a href="/cli">CLI</a></li>
+                <li ><a href="yara?action=list">Yara Rules</a></li>
+                <li ><a href="cli">CLI</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

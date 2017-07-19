@@ -14,7 +14,7 @@
                     </tr>
                     % for res in results[proj]:
                         <tr>
-                            <td><a href="/file/{{proj}}/{{res[1]}}">{{res[0]}}</a></td>
+                            <td><a href="file/{{proj}}/{{res[1]}}">{{res[0]}}</a></td>
                             <td>{{res[1]}}</td>
                         </tr>
                     % end      
