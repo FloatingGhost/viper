@@ -76,4 +76,4 @@ end
     </div>
 </nav>
 <div class="container-fluid">
-<p style="margin-bottom: 25px;"><img src="/static/images/viper.png" width="250" height="60" alt="Viper Malware"/></p>
+<p style="margin-bottom: 25px;"><img src="static/images/viper.png" width="250" height="60" alt="Viper Malware"/></p>

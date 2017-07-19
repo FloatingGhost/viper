@@ -185,6 +185,6 @@ cur_page = int(act_page)
         </ul>
     </div>
 
-    <script type="text/javascript" src="/static/js/pagination.js"></script>
+    <script type="text/javascript" src="static/js/pagination.js"></script>
 % end
 % include("footer.tpl")
