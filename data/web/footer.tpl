@@ -4,7 +4,7 @@
         <script src="/viper/static/js/bootstrap-filestyle.min.js"></script>
         <script>
             $(function () {
-            var activeTab = $('[href=' + location.hash + ']');
+            var activeTab = $('[href=' + location.hash.toString() + ']');
             activeTab && activeTab.tab('show');
             });
         </script> 
