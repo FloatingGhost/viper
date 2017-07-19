@@ -406,10 +406,10 @@ def add_file():
 
         # Add each file
         for new_file in file_list:
-            print new_file
+            print(new_file)
             obj = File(new_file)
             new_path = store_sample(obj)
-            print new_path
+            print(new_path)
             success = True
             if new_path:
                 # Add file to the database.
@@ -785,7 +785,7 @@ if __name__ == '__main__':
 
     bv = bottle.__version__.split('.')[1]
     if int(bv) < 12:
-        print "Please Upgrade Bottle to the latest version 'sudo pip install --upgrade bottle'"
+        print("Please Upgrade Bottle to the latest version 'sudo pip install --upgrade bottle'")
         sys.exit()
 
     if not os.path.exists('projects'):
