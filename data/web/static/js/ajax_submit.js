@@ -1,6 +1,6 @@
 $('#ajaxsubmit').submit(function(event){
   $.ajax({
-    url: '/file/module',
+    url: 'file/module',
     type: 'post',
     dataType:'html', 
     data: $('#ajaxsubmit').serialize(),
@@ -24,7 +24,7 @@ $('#ajaxsubmit').submit(function(event){
  
 $('#hexsubmit').submit(function(event){
   $.ajax({
-    url: '/hex',
+    url: 'hex',
     type: 'post',
     dataType:'html', 
     data: $('#hexsubmit').serialize(),

@@ -4,7 +4,7 @@
         % for note in notes:
             <div class="col-md-4">
                 <div class="note-box">
-                    <form role="form" action="/file/notes" enctype="multipart/form-data" method="post" onsubmit="window.location.reload();">
+                    <form role="form" action="file/notes" enctype="multipart/form-data" method="post" onsubmit="window.location.reload();">
                         <input type="text" class="form-control" name="noteTitle" value="{{note[0]}}">
                         <textarea class="form-control" rows="5" name="noteBody">{{note[1]}}</textarea>
                         <input type="hidden" name="id" value="{{note[2]}}" />
@@ -26,7 +26,7 @@
                     <h4 class="modal-title" id="newTagLabel">Add New Note</h4>
                 </div>
                 <div class="modal-body">
-                    <form role="form" action="/file/notes" enctype="multipart/form-data" method="post" onsubmit="window.location.reload();">
+                    <form role="form" action="file/notes" enctype="multipart/form-data" method="post" onsubmit="window.location.reload();">
                         <input type="text" class="form-control" name="noteTitle" id="noteTitle" placeholder="Title">
                         <textarea class="form-control" rows="3" name="noteBody" id="noteBody" placeholder="Note Text"></textarea>
                         <button type="submit" class="btn btn-default" name="new" value="New">Save</button>
