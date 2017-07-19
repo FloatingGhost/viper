@@ -21,8 +21,8 @@ end
     <meta charset="UTF-8">
     <meta name="description" content="Viper Web Interface">
     <meta name="keywords" content="viper,malware,analysis">
-    <link href="static/css/bootstrap.css" rel="stylesheet">
-    <link href="static/css/style.css" rel="stylesheet">
+    <link href="/viper/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/viper/static/css/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -76,4 +76,4 @@ end
     </div>
 </nav>
 <div class="container-fluid">
-<p style="margin-bottom: 25px;"><img src="static/images/viper.png" width="250" height="60" alt="Viper Malware"/></p>
+<p style="margin-bottom: 25px;"><img src="/viper/static/images/viper.png" width="250" height="60" alt="Viper Malware"/></p>
